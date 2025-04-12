@@ -20,6 +20,7 @@ class BasedLMWrapper(HFLM):
 
         if arch is None:
             arch = checkpoint_name.split("/")[1].split("-")[0]
+        arch = 'based'
 
         assert arch in ['based', 'mamba', 'attn'], print("`arch` must be one of 'based', 'mamba', or 'attn'")
 

@@ -4,7 +4,7 @@ export HYDRA_FULL_ERROR=1
 
 lm_eval \
     --model based_lm \
-    --model_args checkpoint=/home/lyj/project/based/checkpoints/04-09-based-vq-360m \
+    --model_args checkpoint_name=/home/lyj/project/based/checkpoints/04-09-based-vq-360m/hf \
     --tasks swde,fda,squad_completion \
     --device cuda:0 \
     --batch_size 16

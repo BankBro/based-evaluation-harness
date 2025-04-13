@@ -29,6 +29,7 @@ class BasedLMWrapper(HFLM):
             assert kwargs["backend"] == "causal"
 
         self.checkpoint_name = checkpoint_name
+        print(f"checkpoint_name: {checkpoint_name}")
 
         if arch == "based":
             from based.models.gpt import GPTLMHeadModel
